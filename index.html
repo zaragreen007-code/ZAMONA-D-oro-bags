@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zamona D'oro — Uzbek-Italian luxury handbags. Dall'antica Seta al Cuoio Moderno. Samarqanddan Milangacha bir tikuvda." />
+  <title>Zamona D'oro · Maison di Pelletteria · Samarkand · Milano</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Italiana&family=Manrope:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="page--home">
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       LOADER · "il sipario d'oro" — opens like a golden curtain
+  ═══════════════════════════════════════════════════════════════ -->
+  <div class="curtain" aria-hidden="true">
+    <div class="curtain__pane curtain__pane--left"></div>
+    <div class="curtain__pane curtain__pane--right"></div>
+    <div class="curtain__mark">
+      <span class="curtain__mark-text">Z<i>·</i>O</span>
+      <span class="curtain__mark-line"></span>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true">
+    <span class="cursor__dot"></span>
+    <span class="cursor__ring"></span>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════════════════════════ -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__logo" data-route="home" aria-label="Zamona D'oro home">
+      <svg class="nav__mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="0.6"/>
+        <path d="M20 4 L24 14 L34 14 L26 21 L29 31 L20 25 L11 31 L14 21 L6 14 L16 14 Z" fill="none" stroke="currentColor" stroke-width="0.6"/>
+        <circle cx="20" cy="20" r="2.5" fill="currentColor"/>
+      </svg>
+      <span class="nav__wordmark">Zamona<i>'</i>D<span>oro</span></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#home" data-route="home" class="nav__link is-active">Il Salotto</a>
+      <a href="#atelier" data-route="atelier" class="nav__link">L'Atelier</a>
+      <a href="#storia" data-scroll class="nav__link">La Storia</a>
+      <a href="#collezione" data-scroll class="nav__link">Collezione</a>
+      <a href="#contatti" data-scroll class="nav__link">Contatti</a>
+    </nav>
+
+    <div class="nav__meta">
+      <span class="nav__city">Milano</span>
+      <span class="nav__sep">·</span>
+      <span class="nav__city">Toshkent</span>
+    </div>
+
+    <button class="nav__burger" id="navBurger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       PAGE 1 — IL SALOTTO (HOME)
+  ═══════════════════════════════════════════════════════════════ -->
+  <main id="page-home" class="page" data-page="home">
+
+    <!-- ░░░ HERO ░░░ -->
+    <section class="hero" id="home">
+      <div class="hero__bg" style="background-image: url('images/hero-bag.png');"></div>
+      <div class="hero__veil"></div>
+      <div class="hero__suzane" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <p class="hero__eyebrow reveal" data-reveal-delay="200">
+          <span class="eyebrow__line"></span>
+          <span>Maison di Pelletteria · Anno fondato MMXXVI</span>
+          <span class="eyebrow__line"></span>
+        </p>
+
+        <h1 class="hero__title">
+          <span class="reveal-word" data-reveal-delay="400">Dall'antica</span>
+          <span class="reveal-word reveal-word--accent" data-reveal-delay="500"><em>Seta</em></span>
+          <span class="reveal-word" data-reveal-delay="600">al Cuoio</span>
+          <span class="reveal-word reveal-word--accent" data-reveal-delay="700"><em>Moderno</em></span>
+        </h1>
+
+        <p class="hero__sub reveal" data-reveal-delay="1100">
+          Samarqanddan Milangacha — bir tikuvda.<br />
+          <span>Where the Silk Road meets Via Montenapoleone.</span>
+        </p>
+
+        <div class="hero__cta reveal" data-reveal-delay="1300">
+          <a href="#atelier" data-route="atelier" class="btn btn--gold magnetic">
+            <span>Entra nell'Atelier</span>
+            <svg viewBox="0 0 24 12" aria-hidden="true"><path d="M0 6 H22 M16 1 L22 6 L16 11" fill="none" stroke="currentColor" stroke-width="0.8"/></svg>
+          </a>
+          <a href="#storia" data-scroll class="btn btn--ghost magnetic">
+            <span>La Nostra Storia</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-line"></span>
+        <span class="hero__scroll-label">scorri · скрол · scroll</span>
+      </div>
+
+      <div class="hero__corner hero__corner--tl">
+        <span>N° 001</span>
+        <span class="dot"></span>
+        <span>Lotto invernale</span>
+      </div>
+      <div class="hero__corner hero__corner--tr">
+        <span>41.3°N · 69.2°E</span>
+        <span class="dot"></span>
+        <span>45.4°N · 9.1°E</span>
+      </div>
+    </section>
+
+    <!-- ░░░ MARQUEE — la giostra delle parole ░░░ -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Suzane</span><span class="diamond">◆</span>
+        <span>Vacchetta Toscana</span><span class="diamond">◆</span>
+        <span>Zardo'zlik</span><span class="diamond">◆</span>
+        <span>Selleria Fiorentina</span><span class="diamond">◆</span>
+        <span>Atlas di Marghilan</span><span class="diamond">◆</span>
+        <span>Oro Antico</span><span class="diamond">◆</span>
+        <span>Ipak Yo'li</span><span class="diamond">◆</span>
+        <span>Cucitura a Mano</span><span class="diamond">◆</span>
+        <!-- duplicate for seamless loop -->
+        <span>Suzane</span><span class="diamond">◆</span>
+        <span>Vacchetta Toscana</span><span class="diamond">◆</span>
+        <span>Zardo'zlik</span><span class="diamond">◆</span>
+        <span>Selleria Fiorentina</span><span class="diamond">◆</span>
+        <span>Atlas di Marghilan</span><span class="diamond">◆</span>
+        <span>Oro Antico</span><span class="diamond">◆</span>
+        <span>Ipak Yo'li</span><span class="diamond">◆</span>
+        <span>Cucitura a Mano</span><span class="diamond">◆</span>
+      </div>
+    </section>
+
+    <!-- ░░░ LA NOSTRA STORIA ░░░ -->
+    <section class="storia" id="storia">
+      <div class="storia__grid">
+        <figure class="storia__media reveal" data-reveal-delay="0">
+          <div class="storia__media-frame">
+            <img src="images/heritage.png" alt="The Silk Road revisited — Registan at sunset with merchant caravans" />
+            <div class="storia__media-label">
+              <span class="storia__media-num">— I —</span>
+              <span class="storia__media-cap">Registan, ore del crepuscolo</span>
+            </div>
+          </div>
+          <div class="storia__media-secondary">
+            <img src="images/craftsmanship.png" alt="Master artisan hands embroidering gold on leather" />
+          </div>
+        </figure>
+
+        <div class="storia__body">
+          <p class="section__eyebrow reveal" data-reveal-delay="100">
+            <span class="eyebrow__line"></span> La Nostra Storia
+          </p>
+          <h2 class="section__title reveal" data-reveal-delay="200">
+            Due mani,<br />
+            <em>una sola</em> intenzione.
+          </h2>
+
+          <div class="storia__text reveal" data-reveal-delay="350">
+            <p>
+              <span class="dropcap">N</span>el 2026, in una bottega silenziosa di Brera, un disegnatore milanese ricevette un campione di <em>suzane</em> — un ricamo uzbeko nato sulle vie carovaniere che, otto secoli prima, congiungevano Samarcanda a Venezia. Il filo era lo stesso. Le mani, ancora vive.
+            </p>
+            <p>
+              <strong>Zamona D'oro</strong> è il <em>ritorno</em> di quella conversazione interrotta. Ogni borsa nasce due volte: in <em>Toshkent</em>, dove le maestre disegnano col filo d'oro sulla pelle morbida, e a <em>Firenze</em>, dove gli artigiani la cuciono col punto Selleria, uno per uno, lento come un respiro.
+            </p>
+            <p>
+              Non vendiamo accessori. Custodiamo <em>oggetti che si ricordano</em> di chi li ha fatti — e di chi li porterà.
+            </p>
+          </div>
+
+          <p class="storia__sig reveal" data-reveal-delay="500">
+            <span class="storia__sig-mark">℘</span>
+            <span class="storia__sig-name">Aurelio Vinci &amp; Dilbar Saidova</span><br />
+            <span class="storia__sig-role">Fondatori · Direzione Creativa</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ I MAESTRI ░░░ -->
+    <section class="maestri" id="maestri">
+      <header class="maestri__head">
+        <p class="section__eyebrow reveal"><span class="eyebrow__line"></span> I Maestri</p>
+        <h2 class="section__title reveal" data-reveal-delay="100">
+          <em>Quaranta</em> paia di mani.<br />
+          Una sola firma.
+        </h2>
+      </header>
+
+      <div class="maestri__row">
+        <article class="maestro reveal" data-reveal-delay="200">
+          <div class="maestro__media">
+            <img src="images/craftsmanship.png" alt="Uzbek master embroiderer hands at work" />
+            <span class="maestro__badge">N°</span>
+          </div>
+          <div class="maestro__body">
+            <p class="maestro__roman">— I —</p>
+            <h3 class="maestro__name">La Zardo'z</h3>
+            <p class="maestro__city">Toshkent · Maxalla Chorsu</p>
+            <p class="maestro__desc">
+              Quarant'anni passati a far brillare l'oro sul tessuto. Le sue mani conoscono il <em>kanda hayot</em> meglio della sua voce — un punto al minuto, dieci punti al millimetro.
+            </p>
+            <p class="maestro__quote">"Filo d'oro non perdona la fretta."</p>
+          </div>
+        </article>
+
+        <article class="maestro reveal" data-reveal-delay="350">
+          <div class="maestro__media">
+            <img src="images/leather-detail.png" alt="Florentine leather maker's tools and hands" />
+            <span class="maestro__badge">N°</span>
+          </div>
+          <div class="maestro__body">
+            <p class="maestro__roman">— II —</p>
+            <h3 class="maestro__name">Il Sellaio</h3>
+            <p class="maestro__city">Firenze · Oltrarno</p>
+            <p class="maestro__desc">
+              Terza generazione di pellettieri. Lavora la <em>vacchetta</em> come si lavora un sonetto: con misura, con attesa, e una lama sempre più affilata della parola.
+            </p>
+            <p class="maestro__quote">"La pelle decide. Io ascolto."</p>
+          </div>
+        </article>
+
+        <article class="maestro reveal" data-reveal-delay="500">
+          <div class="maestro__media">
+            <img src="images/boutique.png" alt="The Zamona D'oro design atelier interior" />
+            <span class="maestro__badge">N°</span>
+          </div>
+          <div class="maestro__body">
+            <p class="maestro__roman">— III —</p>
+            <h3 class="maestro__name">La Disegnatrice</h3>
+            <p class="maestro__city">Milano · Brera</p>
+            <p class="maestro__desc">
+              Uzbeka di nascita, milanese di formazione. Disegna ogni modello a matita su carta vergata, prima di affidarlo alla pelle. Sei mesi per il primo schizzo.
+            </p>
+            <p class="maestro__quote">"Disegno la nostalgia."</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ░░░ COLLEZIONE EXCLUSIVA ░░░ -->
+    <section class="collezione" id="collezione">
+      <header class="collezione__head">
+        <p class="section__eyebrow reveal"><span class="eyebrow__line"></span> Collezione Esclusiva · Inverno MMXXVI</p>
+        <h2 class="section__title reveal" data-reveal-delay="100">
+          <em>Tre</em> oggetti.<br />
+          Tre civiltà.
+        </h2>
+      </header>
+
+      <div class="collezione__shelf">
+        <article class="piece reveal" data-reveal-delay="200">
+          <div class="piece__media">
+            <img src="images/royal-samarkand.png" alt="Royal Samarkand handbag" class="piece__img" />
+            <span class="piece__corner">001</span>
+          </div>
+          <div class="piece__caption">
+            <h3 class="piece__name"><em>Bibi</em> Khanym</h3>
+            <p class="piece__meta">Pochette · Lapis &amp; Oro Antico</p>
+            <p class="piece__price">€ 4.800</p>
+            <p class="piece__story">Ispirata alla cupola turchese che vegliò la regina di Tamerlano.</p>
+          </div>
+        </article>
+
+        <article class="piece reveal" data-reveal-delay="350">
+          <div class="piece__media">
+            <img src="images/golden-bukhara.png" alt="Golden Bukhara handbag" class="piece__img" />
+            <span class="piece__corner">002</span>
+          </div>
+          <div class="piece__caption">
+            <h3 class="piece__name"><em>Veneziana</em> di Samarcanda</h3>
+            <p class="piece__meta">Crossbody · Bordeaux &amp; Filo d'Oro</p>
+            <p class="piece__price">€ 5.200</p>
+            <p class="piece__story">Sei mesi di ricamo a mano. Una sola al mondo, per stagione.</p>
+          </div>
+        </article>
+
+        <article class="piece reveal" data-reveal-delay="500">
+          <div class="piece__media">
+            <img src="images/silk-road.png" alt="Silk Road Classic handbag" class="piece__img" />
+            <span class="piece__corner">003</span>
+          </div>
+          <div class="piece__caption">
+            <h3 class="piece__name"><em>Registan</em> Royale</h3>
+            <p class="piece__meta">Top-handle · Ikat &amp; Crema</p>
+            <p class="piece__price">€ 4.400</p>
+            <p class="piece__story">Atlas tessuto a Margilan, montato a Firenze. Una conversazione lunga ottocento anni.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="collezione__cta reveal" data-reveal-delay="600">
+        <a href="#atelier" data-route="atelier" class="btn btn--gold-line magnetic">
+          <span>Scopri la Collezione &amp; Personalizza</span>
+          <svg viewBox="0 0 24 12" aria-hidden="true"><path d="M0 6 H22 M16 1 L22 6 L16 11" fill="none" stroke="currentColor" stroke-width="0.8"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ░░░ FILOSOFIA & STATS ░░░ -->
+    <section class="filosofia" id="filosofia">
+      <div class="filosofia__quote-wrap reveal">
+        <svg class="filosofia__ornament" viewBox="0 0 200 30" aria-hidden="true">
+          <path d="M0 15 L80 15" stroke="currentColor" stroke-width="0.4" fill="none"/>
+          <path d="M120 15 L200 15" stroke="currentColor" stroke-width="0.4" fill="none"/>
+          <circle cx="100" cy="15" r="3" fill="none" stroke="currentColor" stroke-width="0.4"/>
+          <circle cx="100" cy="15" r="0.8" fill="currentColor"/>
+          <circle cx="85" cy="15" r="0.8" fill="currentColor"/>
+          <circle cx="115" cy="15" r="0.8" fill="currentColor"/>
+        </svg>
+
+        <blockquote class="filosofia__quote">
+          <span class="filosofia__open">«</span>
+          Non facciamo borse. <em>Custodiamo</em> il tempo<br />
+          di chi le ha fatte, e <em>regaliamo</em> tempo<br />
+          a chi le porterà.
+          <span class="filosofia__close">»</span>
+        </blockquote>
+        <p class="filosofia__attribution">
+          — Manifesto della Maison
+        </p>
+      </div>
+
+      <div class="stats" id="stats">
+        <div class="stat reveal">
+          <span class="stat__num" data-count="40">0</span>
+          <span class="stat__plus">+</span>
+          <span class="stat__label">Maestri artigiani</span>
+          <span class="stat__cities">Toshkent · Firenze · Milano</span>
+        </div>
+        <div class="stat reveal" data-reveal-delay="150">
+          <span class="stat__num" data-count="3">0</span>
+          <span class="stat__label">Paesi</span>
+          <span class="stat__cities">Uzbekistan · Italia · Francia</span>
+        </div>
+        <div class="stat reveal" data-reveal-delay="300">
+          <span class="stat__num" data-count="6">0</span>
+          <span class="stat__label">Mesi per borsa</span>
+          <span class="stat__cities">Dal disegno alla consegna</span>
+        </div>
+        <div class="stat reveal" data-reveal-delay="450">
+          <span class="stat__num stat__num--inf">∞</span>
+          <span class="stat__label">Pazienza</span>
+          <span class="stat__cities">Materia prima principale</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░░ PACKAGING TEASE ░░░ -->
+    <section class="packaging">
+      <div class="packaging__grid">
+        <div class="packaging__text reveal">
+          <p class="section__eyebrow"><span class="eyebrow__line"></span> Il Rituale</p>
+          <h2 class="section__title">
+            Una borsa<br/>
+            <em>non si compra.</em><br/>
+            Si <em>riceve.</em>
+          </h2>
+          <p class="packaging__body">
+            Custodia in cartone lavorato a mano dalle cartiere di Fabriano, foderata in seta uzbeka grezza. Sigillo in cera con il nostro emblema. Lettera della maestra ricamatrice. Tessera di proprietà numerata. Sei mesi di attesa <em>per il momento in cui aprirete la scatola.</em>
+          </p>
+        </div>
+        <div class="packaging__media reveal" data-reveal-delay="200">
+          <img src="images/packaging.png" alt="Zamona D'oro signature packaging — gold-embossed box with silk and wax seal" />
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       PAGE 2 — L'ATELIER (CUSTOMIZER)
+  ═══════════════════════════════════════════════════════════════ -->
+  <main id="page-atelier" class="page" data-page="atelier" hidden>
+
+    <!-- ░░░ ATELIER HEADER ░░░ -->
+    <section class="atelier-hero">
+      <div class="atelier-hero__inner">
+        <p class="section__eyebrow"><span class="eyebrow__line"></span> L'Atelier · La Sala del Disegno</p>
+        <h1 class="atelier-hero__title">
+          <em>Disegna</em> la tua.<br />
+          <span>Una sola, per sempre.</span>
+        </h1>
+        <p class="atelier-hero__sub">
+          Ogni pezzo nasce qui — dalla scelta della pelle al filo dell'ultimo punto. Sei tu il committente; noi, le mani.
+        </p>
+      </div>
+      <div class="atelier-hero__sidemark">
+        <span>Atelier № 02</span>
+        <span class="atelier-hero__line"></span>
+        <span>Su Misura</span>
+      </div>
+    </section>
+
+    <!-- ░░░ MODEL GALLERY ░░░ -->
+    <section class="gallery" id="gallery">
+      <header class="gallery__head">
+        <h2 class="section__title">
+          <em>Otto</em> silhouette,<br/>
+          una di tue.
+        </h2>
+        <div class="gallery__filters" id="filters">
+          <button class="filter is-active" data-filter="all">Tutti</button>
+          <button class="filter" data-filter="tote">Tote</button>
+          <button class="filter" data-filter="clutch">Pochette</button>
+          <button class="filter" data-filter="crossbody">Tracolla</button>
+          <button class="filter" data-filter="top">Top-handle</button>
+        </div>
+      </header>
+
+      <div class="gallery__grid" id="galleryGrid">
+        <!-- Models injected by JS -->
+      </div>
+    </section>
+
+    <!-- ░░░ THE CUSTOMIZER ░░░ -->
+    <section class="customizer" id="customizer">
+      <header class="customizer__head">
+        <p class="section__eyebrow"><span class="eyebrow__line"></span> Il Configuratore · L'Anima dell'Atelier</p>
+        <h2 class="section__title">
+          <em>Personalizza</em> ogni dettaglio.
+        </h2>
+      </header>
+
+      <div class="customizer__stage">
+
+        <!-- LEFT: Live render -->
+        <div class="render">
+          <div class="render__plinth">
+
+            <!-- Real-time SVG bag preview -->
+            <div class="render__svg-wrap" id="bagPreview">
+              <!-- Filled by JS -->
+            </div>
+
+            <!-- Optional: AI preview image -->
+            <div class="render__ai" id="aiPreview" hidden>
+              <img id="aiPreviewImg" src="" alt="AI rendered preview"/>
+              <button class="render__ai-close" id="aiPreviewClose" aria-label="Close AI preview">×</button>
+            </div>
+
+            <!-- Shimmer when generating -->
+            <div class="render__shimmer" id="renderShimmer" hidden>
+              <div class="shimmer__weave"></div>
+              <span>Tessitura in corso…</span>
+            </div>
+
+            <div class="render__plinth-base"></div>
+          </div>
+
+          <div class="render__meta">
+            <span class="render__meta-label">Modello</span>
+            <span class="render__meta-val" id="modelName">Bibi Khanym</span>
+            <span class="render__meta-dot">·</span>
+            <span class="render__meta-label">Riferimento</span>
+            <span class="render__meta-val" id="modelRef">ZD–001–XX–XX</span>
+          </div>
+
+          <button class="btn btn--small btn--ghost magnetic" id="genAiBtn">
+            <span>↺ Genera Anteprima AI</span>
+          </button>
+        </div>
+
+        <!-- RIGHT: Controls -->
+        <aside class="controls">
+
+          <!-- ─── ELEMENTI UZBEKI ─── -->
+          <div class="control-group">
+            <header class="control-group__head">
+              <span class="control-group__flag" aria-hidden="true">🇺🇿</span>
+              <h3 class="control-group__title">Elementi Uzbeki</h3>
+              <span class="control-group__line"></span>
+            </header>
+
+            <div class="control">
+              <label class="control__label">Motivo</label>
+              <div class="chips" data-control="pattern" data-default="suzane">
+                <button class="chip is-active" data-value="suzane" data-color="#C9A961" data-secondary="#A0522D">
+                  <span class="chip__swatch chip__swatch--suzane"></span>Suzane
+                </button>
+                <button class="chip" data-value="ikat" data-color="#1F3A5F" data-secondary="#C9A961">
+                  <span class="chip__swatch chip__swatch--ikat"></span>Adras
+                </button>
+                <button class="chip" data-value="atlas" data-color="#A0522D" data-secondary="#C9A961">
+                  <span class="chip__swatch chip__swatch--atlas"></span>Atlas
+                </button>
+                <button class="chip" data-value="bukhara" data-color="#8B6F2F" data-secondary="#C9A961">
+                  <span class="chip__swatch chip__swatch--bukhara"></span>Buxoro
+                </button>
+                <button class="chip" data-value="shahrisabz" data-color="#1F3A5F" data-secondary="#EBE4D2">
+                  <span class="chip__swatch chip__swatch--shahrisabz"></span>Shahrisabz
+                </button>
+              </div>
+            </div>
+
+            <div class="control">
+              <label class="control__label">Posizione del motivo</label>
+              <div class="chips chips--text" data-control="placement" data-default="front">
+                <button class="chip is-active" data-value="front">Facciata</button>
+                <button class="chip" data-value="flap">Sotto la patta</button>
+                <button class="chip" data-value="side">Laterale</button>
+                <button class="chip" data-value="handle">Attorno al manico</button>
+              </div>
+            </div>
+
+            <div class="control">
+              <label class="control__label">Zardo'zlik <span class="control__addon">+ €800</span></label>
+              <div class="toggle" data-control="zardozi" data-default="off">
+                <button class="toggle__opt is-active" data-value="off">Senza</button>
+                <button class="toggle__opt" data-value="on">Con filo d'oro</button>
+              </div>
+            </div>
+
+            <div class="control">
+              <label class="control__label">Accento di colore</label>
+              <div class="swatches" data-control="accent" data-default="lapis">
+                <button class="swatch is-active" data-value="lapis" style="--c:#1F3A5F" aria-label="Lapis"></button>
+                <button class="swatch" data-value="terracotta" style="--c:#A0522D" aria-label="Terracotta"></button>
+                <button class="swatch" data-value="emerald" style="--c:#1f4d3a" aria-label="Smeraldo della Scuola"></button>
+                <button class="swatch" data-value="gold" style="--c:#C9A961" aria-label="Oro di Buxoro"></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ─── ELEMENTI ITALIANI ─── -->
+          <div class="control-group">
+            <header class="control-group__head">
+              <span class="control-group__flag" aria-hidden="true">🇮🇹</span>
+              <h3 class="control-group__title">Elementi Italiani</h3>
+              <span class="control-group__line"></span>
+            </header>
+
+            <div class="control">
+              <label class="control__label">Tipo di pelle</label>
+              <div class="chips chips--text" data-control="leatherType" data-default="vacchetta">
+                <button class="chip" data-value="vitello">Vitello</button>
+                <button class="chip is-active" data-value="vacchetta">Vacchetta</button>
+                <button class="chip" data-value="nappa">Nappa</button>
+                <button class="chip" data-value="suede">Camoscio</button>
+              </div>
+            </div>
+
+            <div class="control">
+              <label class="control__label">Colore della pelle</label>
+              <div class="swatches" data-control="leatherColor" data-default="cognac">
+                <button class="swatch" data-value="nero" style="--c:#1A1612" aria-label="Nero"></button>
+                <button class="swatch is-active" data-value="cognac" style="--c:#8B5A2B" aria-label="Cognac"></button>
+                <button class="swatch" data-value="bordeaux" style="--c:#5C1B22" aria-label="Bordeaux"></button>
+                <button class="swatch" data-value="crema" style="--c:#EBE4D2" aria-label="Crema"></button>
+                <button class="swatch" data-value="verde" style="--c:#2A3F2A" aria-label="Verde Bosco"></button>
+              </div>
+            </div>
+
+            <div class="control">
+              <label class="control__label">Finitura metallica</label>
+              <div class="chips chips--text" data-control="hardware" data-default="oro-antico">
+                <button class="chip is-active" data-value="oro-antico">Oro Antico</button>
+                <button class="chip" data-value="argento">Argento</button>
+                <button class="chip" data-value="bronzo">Bronzo Brunito</button>
+              </div>
+            </div>
+
+            <div class="control">
+              <label class="control__label">Cucitura</label>
+              <div class="chips chips--text" data-control="stitch" data-default="selleria">
+                <button class="chip is-active" data-value="selleria">Selleria <span class="chip__sub">+ €600</span></button>
+                <button class="chip" data-value="macchina">Macchina</button>
+                <button class="chip" data-value="contrasto">A Contrasto</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ─── DETTAGLI FINALI ─── -->
+          <div class="control-group">
+            <header class="control-group__head">
+              <span class="control-group__flag" aria-hidden="true">✦</span>
+              <h3 class="control-group__title">Dettagli Finali</h3>
+              <span class="control-group__line"></span>
+            </header>
+
+            <div class="control">
+              <label class="control__label">Fodera interna</label>
+              <div class="chips chips--text" data-control="lining" data-default="silk">
+                <button class="chip is-active" data-value="silk">Seta uzbeka <span class="chip__sub">+ €400</span></button>
+                <button class="chip" data-value="suede">Camoscio</button>
+                <button class="chip" data-value="cotton">Cotone</button>
+              </div>
+            </div>
+
+            <div class="control">
+              <label class="control__label" for="monogram">Monogramma <span class="control__addon">3 lettere · + €300</span></label>
+              <input
+                type="text"
+                id="monogram"
+                class="input-mono"
+                maxlength="3"
+                placeholder="A · M · L"
+                spellcheck="false"
+              />
+            </div>
+
+            <div class="control">
+              <label class="control__label">Mini-portafoglio</label>
+              <div class="toggle" data-control="wallet" data-default="off">
+                <button class="toggle__opt is-active" data-value="off">No</button>
+                <button class="toggle__opt" data-value="on">Sì <span class="chip__sub">+ €350</span></button>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+
+      <!-- Price + booking -->
+      <footer class="price-bar">
+        <div class="price-bar__left">
+          <span class="price-bar__label">Su misura · pagamento alla consegna</span>
+          <span class="price-bar__price">
+            <span class="price-bar__currency">€</span>
+            <span class="price-bar__amount" id="priceAmount">3.500</span>
+          </span>
+          <span class="price-bar__breakdown" id="priceBreakdown">Base · Vacchetta · Cognac</span>
+        </div>
+        <button class="btn btn--gold magnetic" id="bookBtn">
+          <span>Prenota una Consultazione Privata</span>
+          <svg viewBox="0 0 24 12" aria-hidden="true"><path d="M0 6 H22 M16 1 L22 6 L16 11" fill="none" stroke="currentColor" stroke-width="0.8"/></svg>
+        </button>
+      </footer>
+    </section>
+
+    <!-- ░░░ IL PROCESSO ░░░ -->
+    <section class="processo" id="processo">
+      <header class="processo__head">
+        <p class="section__eyebrow"><span class="eyebrow__line"></span> Il Processo</p>
+        <h2 class="section__title">
+          Dal <em>disegno</em> alla <em>consegna</em>.<br/>
+          Sei mesi, cinque città.
+        </h2>
+      </header>
+
+      <ol class="timeline">
+        <li class="timeline__step reveal">
+          <span class="timeline__roman">— I —</span>
+          <span class="timeline__city">Milano</span>
+          <h4 class="timeline__title">Disegno</h4>
+          <p class="timeline__body">Schizzi a matita su carta vergata. Sei iterazioni prima dell'approvazione.</p>
+          <span class="timeline__weeks">Settimana 1–3</span>
+        </li>
+        <li class="timeline__step reveal" data-reveal-delay="150">
+          <span class="timeline__roman">— II —</span>
+          <span class="timeline__city">Firenze</span>
+          <h4 class="timeline__title">Selezione</h4>
+          <p class="timeline__body">La pelle è scelta dal Sellaio una pezza alla volta, alla luce del nord.</p>
+          <span class="timeline__weeks">Settimana 4</span>
+        </li>
+        <li class="timeline__step reveal" data-reveal-delay="300">
+          <span class="timeline__roman">— III —</span>
+          <span class="timeline__city">Samarcanda</span>
+          <h4 class="timeline__title">Ricamo</h4>
+          <p class="timeline__body">Filo d'oro a mano. Una zardo'z lavora otto ore al giorno per ottanta giorni.</p>
+          <span class="timeline__weeks">Settimana 5–16</span>
+        </li>
+        <li class="timeline__step reveal" data-reveal-delay="450">
+          <span class="timeline__roman">— IV —</span>
+          <span class="timeline__city">Firenze</span>
+          <h4 class="timeline__title">Assemblaggio</h4>
+          <p class="timeline__body">Cucitura Selleria, un punto per volta. Tre settimane di concentrazione.</p>
+          <span class="timeline__weeks">Settimana 17–22</span>
+        </li>
+        <li class="timeline__step reveal" data-reveal-delay="600">
+          <span class="timeline__roman">— V —</span>
+          <span class="timeline__city">Casa Sua</span>
+          <h4 class="timeline__title">Consegna</h4>
+          <p class="timeline__body">In scatola sigillata a cera, accompagnata da una lettera scritta a mano.</p>
+          <span class="timeline__weeks">Settimana 23–24</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ░░░ MODEL EDITORIAL ░░░ -->
+    <section class="editorial">
+      <div class="editorial__col">
+        <img src="images/model-emerald.jpg" alt="Editorial campaign — emerald and brown bag"/>
+        <p class="editorial__cap">Campagna Inverno · "Le Due Anime"</p>
+      </div>
+      <div class="editorial__col editorial__col--text">
+        <p class="section__eyebrow"><span class="eyebrow__line"></span> Campagna 26/27</p>
+        <h2 class="section__title">
+          <em>Portare</em> Zamona<br/>
+          è portare<br/>
+          una <em>conversazione.</em>
+        </h2>
+        <p class="editorial__body">
+          Ogni borsa entra in dialogo con chi la possiede. Si patina. Si ammorbidisce. Si racconta. Diventa più sua, anno dopo anno — come la stoffa nuziale che la madre passa alla figlia.
+        </p>
+      </div>
+      <div class="editorial__col">
+        <img src="images/model-taupe.jpg" alt="Editorial campaign — taupe hobo and trunk"/>
+        <p class="editorial__cap">Inverno · "Il Baule da Viaggio"</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER (shared)
+  ═══════════════════════════════════════════════════════════════ -->
+  <footer class="foot" id="contatti">
+    <div class="foot__top">
+      <div class="foot__brand">
+        <div class="foot__mark">
+          <svg viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="0.6"/>
+            <path d="M20 4 L24 14 L34 14 L26 21 L29 31 L20 25 L11 31 L14 21 L6 14 L16 14 Z" fill="none" stroke="currentColor" stroke-width="0.6"/>
+            <circle cx="20" cy="20" r="2.5" fill="currentColor"/>
+          </svg>
+          <span>Zamona<i>'</i>D<span>oro</span></span>
+        </div>
+        <p class="foot__tag">Dall'antica Seta al Cuoio Moderno.</p>
+      </div>
+
+      <div class="foot__news">
+        <p class="foot__news-title">Ricevi inviti esclusivi.</p>
+        <p class="foot__news-sub">Anteprime di collezione, accesso privato alle nostre presentazioni a Milano e Toshkent. Quattro lettere all'anno. Nessuna pubblicità.</p>
+        <form class="foot__form" id="newsForm">
+          <input type="email" placeholder="il vostro indirizzo · " required class="foot__input"/>
+          <button class="btn btn--gold-small magnetic" type="submit">
+            <span>Iscrivi</span>
+          </button>
+        </form>
+      </div>
+
+      <div class="foot__addresses">
+        <div class="addr">
+          <p class="addr__city">Milano</p>
+          <p class="addr__street">Via Brera, 28<br/>20121 Milano · IT</p>
+          <p class="addr__hours">10:30 — 19:00<br/>Su appuntamento</p>
+        </div>
+        <div class="addr">
+          <p class="addr__city">Toshkent</p>
+          <p class="addr__street">Atelier Chorsu<br/>Eski Shahar · UZ</p>
+          <p class="addr__hours">09:00 — 18:00<br/>Su appuntamento</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot__bottom">
+      <span>© MMXXVI · Zamona D'oro · Maison di Pelletteria</span>
+      <span class="foot__bottom-links">
+        <a href="#">Privacy</a> · <a href="#">Termini</a> · <a href="#">Cookie</a> · <a href="#">Stampa</a>
+      </span>
+      <span class="foot__social">
+        <a href="#" aria-label="Instagram">Instagram</a> ·
+        <a href="#" aria-label="Pinterest">Pinterest</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       CONSULTATION MODAL
+  ═══════════════════════════════════════════════════════════════ -->
+  <div class="modal" id="bookModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal__veil"></div>
+    <div class="modal__card">
+      <button class="modal__close" id="modalClose" aria-label="Close">×</button>
+      <p class="section__eyebrow"><span class="eyebrow__line"></span> Consultazione Privata</p>
+      <h3 class="modal__title" id="modalTitle">Una nostra <em>maestra</em><br/>vi contatterà.</h3>
+      <p class="modal__sub">Entro 48 ore dalla sua richiesta. Nessun automatismo, nessuna fretta.</p>
+
+      <form class="modal__form" id="bookForm">
+        <label>
+          <span>Nome &amp; Cognome</span>
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          <span>Indirizzo email</span>
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          <span>Telefono</span>
+          <input type="tel" name="phone" />
+        </label>
+        <label>
+          <span>Lingua preferita</span>
+          <select name="lang">
+            <option>Italiano</option>
+            <option>O'zbekcha</option>
+            <option>English</option>
+            <option>Русский</option>
+          </select>
+        </label>
+        <label class="modal__textarea">
+          <span>La sua visione</span>
+          <textarea name="msg" rows="4" placeholder="Mi racconti la borsa che immagina…"></textarea>
+        </label>
+        <button class="btn btn--gold magnetic" type="submit">
+          <span>Invia richiesta</span>
+        </button>
+      </form>
+
+      <div class="modal__success" id="modalSuccess" hidden>
+        <span class="modal__seal">✦</span>
+        <h3>Grazie.</h3>
+        <p>La sua richiesta è in viaggio. Una nostra <em>maestra</em> le scriverà entro due giorni.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio for easter egg (silent placeholder, actual sound triggered programmatically) -->
+  <div class="easter-egg" id="easterEgg" hidden>
+    <div class="easter-egg__inner">
+      <p class="easter-egg__line">Doira urilsa, dunyo eshitadi.</p>
+      <p class="easter-egg__line easter-egg__line--it">Quando il tamburo suona, il mondo ascolta.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
